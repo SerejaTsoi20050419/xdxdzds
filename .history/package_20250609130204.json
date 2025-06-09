@@ -19,6 +19,7 @@
     "dev": "webpack --mode development",
     "start": "webpack serve --mode development --open",
     "watch": "webpack --mode development --watch"
+    "predeploy": "npm run build",
   },
   "browserslist": [
     "last 2 versions",
@@ -57,5 +58,5 @@
   "dependencies": {
     "swiper": "^11.2.8"
   },
-  "homepage": "https://username.github.io/my-webcore-hi"
+  "homepage": "https://username.github.io/repository-name"
 }
