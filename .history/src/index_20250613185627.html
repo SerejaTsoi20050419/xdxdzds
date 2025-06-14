@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+       <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <title>Webpack</title>
+  </head>
+  <body>
+    <div class="layout">
+    <aside class="sidebar">
+      <!-- Контент боковой панели -->
+      <h2>Меню</h2>
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <h1>Услуги и сервисы</h1>
+      <h3 class="main-text">Оставить заявку</h3><img src="img/repair.png" class="repair-icon">
+      <h3 class="main-text2">Статус ремонта</h3><img src="img/checkstatus.png" class="checkstatus-icon">
+      <div class="services_nav">
+      <button class="services__tab services__tab--active" data-tab="devices">Ремонтируемые бренды</button>
+      <button class="services__tab" data-tab="extra">Дополнительные услуги</button>
+      <button class="services__tab" data-tab="prices">Цены на услуги</button>
+      <button class="services__tab" data-tab="ggfgfg">Адреса сервисных центров</button>
+      <button class="services__tab" data-tab="special">Специальные цены</button>
+      </div>
+      <div class="otzivi">
+        <button class="services__tab">Отзывы</button>
+      </div>
+      <div class="services_text">
+        <p class="service-text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+      </div>
+       <div id="moreText" class="more-text" style="display: none;">
+        <p>
+          Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+        </p>
+      </div>
+      <span id="readMoreBtn" class="read-more-btn">
+        <img src="img/thrt.png" class="thrt-icon" id="expandIcon" width="25" height="25"/>
+        <span id="readMoreText">Читать далее</span>
+      </span>
+      <div class="img-cps">
+        <img src="img/Picture Copy.png" class="cps-img">
+      </div>
+      <hr class="liniya-1" style="border:none; border-top: 2px solid #E0FFFF;"> 
+      <p class="remont-brendov">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</p>
+      <div class="brand-grid">
+    <div class="brand-card"><img class="brand-logo" src="img/Bitmap.png" alt="Lenovo"><div class="arrow-button">></div></div>
+    <div class="brand-card"><img class="brand-logo" src="img/samsung.png" alt="Samsung"><div class="arrow-button">></div></div>
+    <div class="brand-card"><img class="brand-logo" src="img/Apple.png" alt="Apple"><div class="arrow-button">></div></div>
+    <div class="brand-card"><img class="brand-logo" src="img/Viewsonic.png" alt="ViewSonic"><div class="arrow-button">></div></div>
+    <div class="brand-card"><img class="brand-logo" src="img/Bosch.png" alt="Bosch"><div class="arrow-button">></div></div>
+    <div class="brand-card"><img class="brand-logo" src="img/Hp.png" alt="HP"><div class="arrow-button">></div></div>
+    <div class="brand-card"><img class="brand-logo" src="img/Acer.png" alt="Acer"><div class="arrow-button">></div></div>
+    <div class="brand-card"><img class="brand-logo" src="img/Sony.png " alt="Sony"><div class="arrow-button">></div></div>
+  </div>
+    <div class="collapsed" id="brand-list">
+    <div class="brand-card"><img class="brand-logo" src="img/Bitmap.png" alt="Lenovo"><div class="arrow-button">></div></div>
+    <div class="brand-card"><img class="brand-logo" src="img/samsung.png" alt="Samsung"><div class="arrow-button">></div></div>
+    <div class="brand-card"><img class="brand-logo" src="img/Apple.png" alt="Apple"><div class="arrow-button">></div></div>
+  </div>
+  <button id="toggle-button">
+    <img id="toggle-icon" src="img/thrt.png" alt="Показать все"/>
+    <span id="toggle-text">Показать все</span>
+  </button>
+  <hr class="liniya-2" style="border:none; border-top: 2px solid #E0FFFF;">
+  <p class="remont-texniki">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</p>
+  <section class="repair-options">
+    <div class="card"><a class="remont-card">Ремонт ноутбуков</a><div class="knopka-card">></div></div>
+    <div class="card"><a class="remont-card">Ремонт планшетов</a><div class="knopka-card">></div></div>
+    <div class="card"><a class="pk-card">Ремонт ПК</a><div class="knopka-card">></div></div>
+    <div class="card"><a class="remont-card">Ремонт мониторов</a><div class="knopka-card">></div></div>
+    </div>
+  </section>
+   <img src="img/thrt.png" class="thrt-card" id="expandIcon" width="25" height="25" style="position: absolute;" alt="Раскрыть" />
+   <button class="show-all">Показать все</button>
+   <p class="scena-yslugi">ЦЕНЫ НА УСЛУГИ</p>
+   <hr class="liniya-2" style="border:none; border-top: 2px solid #E0FFFF;">
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>

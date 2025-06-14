@@ -1,0 +1,85 @@
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+  }
+
+  .layout {
+    display: flex;
+    min-height: 100vh;
+  }
+
+  .sidebar {
+    background-color: grey;
+    padding: 20px;
+    width: 250px;
+    flex-shrink: 0;
+  }
+
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .main-text {
+    margin-left: 900px;
+    margin-top: -50px;
+  }
+
+  .main-text2 {
+    margin-left: 1200px;
+    margin-top: -47px;
+  }
+
+  .repair-icon {
+    position: absolute;
+    margin-left: 1069px;
+    margin-top: -55px;
+  }
+
+  .checkstatus-icon {
+    position: absolute;
+    margin-left: 1360px;
+    margin-top: -55px;
+  }
+
+  .services__tab {
+    background: white;
+    border: none;
+  }
+
+  .services__tab--active {
+    background-color: #fff;
+    border: 1px solid #00cc99;
+   border-radius: 5px;
+  }
+
+  h1, h2, h3 {
+    margin-bottom: 20px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  /* Адаптация под мобильные */
+  @media (max-width: 768px) {
+    .layout {
+      flex-direction: column;
+    }
+
+    .sidebar {
+      width: 100%;
+    }
+  }
