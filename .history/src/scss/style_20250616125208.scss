@@ -1,0 +1,44 @@
+.brands {
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.brands__title {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 16px;
+}
+
+.brands__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.brand button {
+  background: #ff0066;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+}
+
+.brands__show-more {
+  margin-top: 12px;
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+}

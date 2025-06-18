@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+       <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+   <title>Webpack</title>
+</head>
+<body class="page">
+
+  <aside class="sidebar">
+    <div class="sidebar__logo">CPS</div>
+    <nav class="sidebar__menu">
+      <ul class="menu">
+        <li class="menu__item"><a href="#" class="menu__link">Ремонт техники</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Услуги и сервисы</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Корпоративным клиентам</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Продавцам техники</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Партнёрам</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Производителям</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Наши сервисные центры</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar__contacts">
+      <div class="sidebar__icons">
+        <button class="icon-button">📞</button>
+        <button class="icon-button">💬</button>
+        <button class="icon-button">👤</button>
+      </div>
+      <a href="mailto:mail@cps.com" class="sidebar__email">mail@cps.com</a>
+      <div class="sidebar__phone">8 800 890 8900</div>
+      <div class="sidebar__lang">
+        <a href="#">RU</a> <a href="#">EN</a> <a href="#">CH</a>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <section class="section service-intro">
+      <h1 class="service-intro__title">Услуги и сервисы</h1>
+      <p class="service-intro__text">
+        Мы являемся авторизованным сервисным центром по ремонту техники. У нас можно отремонтировать ноутбуки Dell с гарантией производителя. Работаем с 1992 года.
+      </p>
+    </section>
+
+     <div class="brand-grid">
+    <div class="brand-card"><img class="brand-logo" src="img/Bitmap.png" alt="Lenovo"><div class="arrow-button">></div></div>
+    <div class="brand-card"><img class="brand-logo" src="img/samsung.png" alt="Samsung"><div class="arrow-button">></div></div>
+    <div class="brand-card"><img class="brand-logo" src="img/Apple.png" alt="Apple"><div class="arrow-button">></div></div>
+    <div class="brand-card"><img class="brand-logo" src="img/Viewsonic.png" alt="ViewSonic"><div class="arrow-button">></div></div>
+    <div class="brand-card"><img class="brand-logo" src="img/Bosch.png" alt="Bosch"><div class="arrow-button">></div></div>
+    <div class="brand-card"><img class="brand-logo" src="img/Hp.png" alt="HP"><div class="arrow-button">></div></div>
+    <div class="brand-card"><img class="brand-logo" src="img/Acer.png" alt="Acer"><div class="arrow-button">></div></div>
+    <div class="brand-card"><img class="brand-logo" src="img/Sony.png " alt="Sony"><div class="arrow-button">></div></div>
+  </div>
+    <div class="collapsed" id="brand-list">
+    <div class="brand-card"><img class="brand-logo" src="img/Bitmap.png" alt="Lenovo"><div class="arrow-button">></div></div>
+    <div class="brand-card"><img class="brand-logo" src="img/samsung.png" alt="Samsung"><div class="arrow-button">></div></div>
+    <div class="brand-card"><img class="brand-logo" src="img/Apple.png" alt="Apple"><div class="arrow-button">></div></div>
+  </div>
+  <button id="toggle-button">
+    <img id="toggle-icon" src="img/thrt.png" alt="Показать все"/>
+    <span id="toggle-text">Показать все</span>
+  </button>
+
+    <section class="section devices">
+      <h2 class="devices__title">Ремонт различных видов техники</h2>
+      <ul class="devices__list">
+        <li class="device-card">Ремонт ноутбуков <button class="device-card__button">→</button></li>
+        <li class="device-card">Ремонт планшетов <button class="device-card__button">→</button></li>
+        <li class="device-card">Ремонт ПК <button class="device-card__button">→</button></li>
+        <li class="device-card">Ремонт мониторов <button class="device-card__button">→</button></li>
+      </ul>
+    </section>
+
+    <section class="section prices">
+      <h2 class="prices__title">Цены на услуги</h2>
+      <table class="price-table">
+        <thead>
+          <tr>
+            <th>Ремонтные услуги</th>
+            <th>Цена</th>
+            <th>Срок</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Диагностика</td>
+            <td>Бесплатно</td>
+            <td>30 мин</td>
+            <td><button class="button">Заказать</button></td>
+          </tr>
+          <tr>
+            <td>Замена дисплея</td>
+            <td>1 000 ₽</td>
+            <td>30–120 мин</td>
+            <td><button class="button">Заказать</button></td>
+          </tr>
+          <tr>
+            <td>Замена полифонического динамика</td>
+            <td>1 000 ₽</td>
+            <td>30–120 мин</td>
+            <td><button class="button">Заказать</button></td>
+          </tr>
+          <tr>
+            <td>Тестирование с выдачей заключения</td>
+            <td>1 000 ₽</td>
+            <td>30–120 мин</td>
+            <td><button class="button">Заказать</button></td>
+          </tr>
+          <tr>
+            <td>Замена программного обеспечения</td>
+            <td>1 000 ₽</td>
+            <td>30–120 мин</td>
+            <td><button class="button">Заказать</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="prices__note">
+        Все цены указаны с учетом НДС. Стоимость ремонта указана за единичную услугу.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2019 CPS. Разработка — Apesong</p>
+    <nav>
+      <a href="#">Политика конфиденциальности</a>
+      <a href="#">Условия</a>
+    </nav>
+  </footer>
+
+</body>
+</html>
+
+  

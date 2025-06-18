@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* === Layout === */
+.page {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  padding: 30px;
+  background-color: #f9f9f9;
+}
+
+
+.sidebar__email {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.sidebar__phone {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sidebar__lang a {
+  margin-right: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.sidebar {
+  width: 260px;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar__logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sidebar__menu .menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu__item {}
+
+.menu__link {
+  color: #000;
+  font-weight: 500;
+  padding: 5px 0;
+}
+
+.sidebar__contacts {
+  margin-top: 40px;
+}
+
+.sidebar__icons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.header__actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* === Buttons === */
+.button {
+  background-color: #f50057;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 24px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #d4004e;
+}
+
+.button--icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === Service Intro === */
+.service-intro__title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.service-intro__text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* === Brands Section === */
+.brands__title {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.brands__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.brand-card {
+  background-color: #fff;
+  padding: 16px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-card img {
+  max-height: 24px;
+  max-width: 80px;
+}
+
+.brand-card__button {
+  background-color: #f50057;
+  color: #fff;
+  border-radius: 50%;
+  padding: 6px 10px;
+  font-weight: bold;
+}
+
+/* === Devices Section === */
+.devices__title {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.devices__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+}
+
+.device-card {
+  background-color: #fff;
+  border: 1px solid #eee;
+  padding: 16px 20px;
+  border-radius: 10px;
+  flex: 1 1 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.device-card__button {
+  background-color: #f50057;
+  color: #fff;
+  border-radius: 50%;
+  padding: 6px 10px;
+  font-weight: bold;
+}
+
+/* === Prices Section === */
+.prices__title {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.price-table th,
+.price-table td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.price-table th {
+  background-color: #fafafa;
+  font-weight: 600;
+}
+
+.price-table td:last-child {
+  text-align: right;
+}
+
+.prices__note {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #888;
+}
+
+/* === Footer === */
+.footer {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+
+.footer nav a {
+  margin: 0 10px;
+  color: #777;
+}

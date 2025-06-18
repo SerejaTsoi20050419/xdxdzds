@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+       <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+   <title>Webpack</title>
+   
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="logo">CPS</div>
+      <nav class="sidebar__menu">
+        <ul>
+          <li>Ремонт техники</li>
+          <li class="active">Услуги и сервисы</li>
+          <li>Корпоративным клиентам</li>
+          <li>Продавцам техники</li>
+          <li>Партнерам</li>
+          <li>Производителям</li>
+          <li>Наши сервисные центры</li>
+          <li>Контакты</li>
+        </ul>
+      </nav>
+      <div class="sidebar__contact">
+        <p>mail@cps.com</p>
+        <p><strong>8 800 890 8900</strong></p>
+        <div class="sidebar__lang">RU EN CH</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topnav">
+        <ul class="topnav__menu">
+          <li class="active">Ремонтируемые бренды</li>
+          <li>Дополнительные услуги</li>
+          <li>Цены на услуги</li>
+          <li>Адреса сервисных центров</li>
+          <li>Специальные цены</li>
+        </ul>
+        <div class="topnav__actions">
+          <button class="btn">Оставить заявку</button>
+          <button class="btn btn--status">Статус ремонта</button>
+        </div>
+      </header>
+
+      <section class="brands">
+        <h2 class="brands__title">Ремонт техники различных брендов</h2>
+        <div class="brands__list">
+          <div class="brand"><span>Lenovo</span><button>&#8594;</button></div>
+          <div class="brand"><span>Samsung</span><button>&#8594;</button></div>
+          <div class="brand"><span>Apple</span><button>&#8594;</button></div>
+          <div class="brand"><span>ViewSonic</span><button>&#8594;</button></div>
+          <div class="brand"><span>Bosch</span><button>&#8594;</button></div>
+          <div class="brand"><span>HP</span><button>&#8594;</button></div>
+          <div class="brand"><span>Acer</span><button>&#8594;</button></div>
+          <div class="brand"><span>Sony</span><button>&#8594;</button></div>
+        </div>
+        <button class="brands__show-more">Показать все</button>
+      </section>
+
+      <section class="device-types">
+        <h2 class="device-types__title">Ремонт различных видов техники</h2>
+        <div class="device-types__list">
+          <div class="device-type"><span>Ремонт ноутбуков</span><button>&#8594;</button></div>
+          <div class="device-type"><span>Ремонт планшетов</span><button>&#8594;</button></div>
+          <div class="device-type"><span>Ремонт ПК</span><button>&#8594;</button></div>
+          <div class="device-type"><span>Ремонт мониторов</span><button>&#8594;</button></div>
+        </div>
+        <button class="device-types__show-more">Показать все</button>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

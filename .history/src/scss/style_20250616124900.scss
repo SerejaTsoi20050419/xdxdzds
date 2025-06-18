@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  background-color: #f7f7f7;
+}
+
+/* Боковая панель */
+.sidebar {
+  width: 240px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  position: fixed;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  margin: 12px 0;
+  color: #555;
+  cursor: pointer;
+}
+
+.menu .active {
+  font-weight: bold;
+  color: #00bfa5;
+}
+
+.contact {
+  margin-top: auto;
+  font-size: 14px;
+  color: #333;
+}
+
+.contact .icons span {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.phone {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Основной контент */
+.content {
+  margin-left: 260px;
+  padding: 30px;
+  flex: 1;
+}
+
+.topbar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.topbar h1 {
+  margin: 0;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tabs button {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tabs .active {
+  background-color: #e6f9f7;
+  border-color: #00bfa5;
+}
+
+.about {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.about p {
+  max-width: 600px;
+}
+
+.about .read-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00bfa5;
+  text-decoration: none;
+}
+
+.about-image {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+/* Секции брендов и категорий */
+.brands-section, .categories-section {
+  margin-top: 40px;
+}
+
+h2 {
+  font-size: 18px;
+  color: #666;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.brands-grid, .categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 15px;
+}
+
+.brand-item, .category-item {
+  background-color: #fff;
+  padding: 12px 15px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+.brand-item button, .category-item button {
+  background-color: #ff2e6d;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.show-all {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #00bfa5;
+  text-decoration: none;
+}
