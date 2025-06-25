@@ -1,0 +1,194 @@
+/* Общие сбросы */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'TT Lakes', sans-serif;
+  line-height: 1.5;
+  background: #fff;
+  color: #222;
+}
+
+/* Контейнер - основной layout */
+.layout {
+  display: flex;
+  min-height: 100vh; /* чтобы растянуть по высоте */
+}
+
+/* Боковая панель */
+.sidebar {
+  flex-shrink: 0;
+  width: 280px; /* фиксированная ширина, но можно в процентах */
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* чтобы футер с контактами внизу */
+  border-right: 1px solid #ddd;
+}
+
+/* Логотип и меню */
+.logo img.side-bar-group {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu li {
+  margin: 1rem 0;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Иконка рядом с пунктом */
+.tyi-icon {
+  position: absolute;
+  left: -15px; /* рядом слева */
+  top: 0;
+  height: 30px;
+  width: auto;
+}
+
+/* Иконки контактов внизу */
+.icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.icons img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* Почта и телефон */
+.mail, .phone {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Языки */
+.languages {
+  display: flex;
+  gap: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Контент справа (основной) */
+.main-content {
+  flex-grow: 1;
+  padding: 2rem;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Заголовок */
+.yslugis {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Кнопки табов */
+.services_nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.services__tab {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.services__tab--active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* Бренды в сетке */
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.brand-card {
+  background: #f2f2f2;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+.brand-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Стрелочка справа */
+.arrow-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Медиазапросы для адаптивности */
+@media (max-width: 992px) {
+  .layout {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .menu li {
+    margin: 0;
+  }
+  
+  .main-content {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .services_nav {
+    flex-direction: column;
+  }
+  
+  .brand-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+}
