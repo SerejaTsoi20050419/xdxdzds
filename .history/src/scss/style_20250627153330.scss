@@ -282,9 +282,7 @@
 }
 
 .img-cps img {
-  margin-left: -98%;
-  margin-top: 7%;
-  width: 200%;
+  max-width: 100%;
   height: auto;
   display: block;
 }
@@ -304,8 +302,8 @@
 
   .read-more-btn {
     display: flex;
-    margin-left: 30px;
-    margin-top: 2%;
+    margin-left: -1px;
+    margin-top: 4%;
     cursor: pointer;
   }
 
@@ -343,7 +341,7 @@
   .more-text {
     font-size: 18px;
     width: 620px;
-    margin-left: 40px;
+    margin-left: -2px;
     margin-top: 20px;
   }
 
@@ -1209,7 +1207,7 @@ html, body {
 
 .liniya-1 {
   width: 200%;
-  margin-top: 8%;
+  margin-top: 78%;
   margin-left: -20%;
 }
 
@@ -1325,8 +1323,6 @@ html, body {
 
 .service-text {
   margin-top: 10%;
-  margin-left: -2%;
-  width: 115%;
 }
 
 .header-bv {
@@ -1350,13 +1346,14 @@ html, body {
 }
 
 .img-cps {
-  margin-top: 59%;
-  width: 55%;
-  margin-left: -44%;
+  position: absolute;
+  margin-top: 10%;
+  width: 110%;
+  margin-left: -10%;
 }
 
  .img-cps.move-down {
-    margin-top: 450px; /* на сколько двигаем вниз */
+    margin-top: 50px; /* на сколько двигаем вниз */
   }
 
 .swiper-container {
@@ -2415,13 +2412,13 @@ html, body {
 
 .img-cps {
   position: absolute;
-  margin-top: 80%;
-  width: 50%;
-  margin-left: 43%;
+  margin-top: 10%;
+  width: 109%;
+  margin-left: -12%;
 }
 
  .img-cps.move-down {
-    margin-top: 530px; /* на сколько двигаем вниз */
+    margin-top: 30px; /* на сколько двигаем вниз */
   }
 
 .swiper-container {
@@ -2619,7 +2616,7 @@ html, body {
 
 .more-text {
   font-size: 17px;
-  width: 100%;
+  width: 350px;
   margin-left: -1px;
   margin-top: 20px;
 }
